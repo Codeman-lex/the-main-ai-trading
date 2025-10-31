@@ -1,0 +1,25 @@
+/* Remove watermark elements */
+[class*="manus-"],
+[id*="manus-"],
+[data-manus],
+[data-loc*="src/modules/Alert/PreviewerModeAlert"],
+footer-watermark,
+make-with-manus,
+.manus-previewer-root,
+.manus-previewer-content-root,
+#manus-runtime,
+[class*="previewer-mode"],
+[id*="previewer-mode"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    clip: rect(0, 0, 0, 0) !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+}
